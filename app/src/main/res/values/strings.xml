@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pablo_Gonzalez_Ruiz_PMDM_Tarea1</string>
+    <string name="lbl_name">Nombre</string>
+    <string name="lbl_pswrd">Contraseña</string>
+    <string name="btn_logIn">Iniciar Sesión</string>
+    <string name="btn_credential">Modificar Credenciales</string>
+
+</resources>
