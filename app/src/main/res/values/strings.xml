@@ -4,5 +4,7 @@
     <string name="lbl_pswrd">Contraseña</string>
     <string name="btn_logIn">Iniciar Sesión</string>
     <string name="btn_credential">Modificar Credenciales</string>
+    <string name="txtvwWelcome">Bienvenido: </string>
+    <string name="btnAlarma">Poner Alarma</string>
 
 </resources>
