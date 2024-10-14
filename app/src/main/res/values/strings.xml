@@ -1,10 +1,20 @@
 <resources>
     <string name="app_name">Pablo_Gonzalez_Ruiz_PMDM_Tarea1</string>
-    <string name="lbl_name">Nombre</string>
-    <string name="lbl_pswrd">Contraseña</string>
-    <string name="btn_logIn">Iniciar Sesión</string>
-    <string name="btn_credential">Modificar Credenciales</string>
-    <string name="txtvwWelcome">Bienvenido: </string>
-    <string name="btnAlarma">Poner Alarma</string>
+
+<!-- Labels-->
+    <string name="lblName">Nombre:</string>
+    <string name="lblPswrd">Contraseña:</string>
+    <string name="lblWelcome">Bienvenido: </string>
+    <string name="lblHoraAlarma">Horas:</string>
+    <string name="lblMinutosAlarma">Minutos:</string>
+    <string name="lblNuevoNombre">Nuevo Nombre:</string>
+    <string name="lblNuevaContraseña">Nueva Contraseña:</string>
+
+<!--Botones-->
+    <string name="btnLogIn">Iniciar Sesión</string>
+    <string name="btnCredential">Modificar Credenciales</string>
+    <string name="btnVentanaAlarma">Poner Alarma</string>
+    <string name="btnCrearAlarma">Crear Alarma</string>
+    <string name="btnGuardarCambios">Guardar Cambios</string>
 
 </resources>

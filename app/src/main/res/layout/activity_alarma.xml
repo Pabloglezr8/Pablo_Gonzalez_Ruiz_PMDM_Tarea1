@@ -5,37 +5,114 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="50dp"
     tools:context=".Alarma">
 
     <TableLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center_horizontal|center_vertical"
-            tools:layout_editor_absoluteX="-205dp"
-            tools:layout_editor_absoluteY="349dp">
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
 
             <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="20dp"
-                android:text="@string/lbl_name"
-                android:textSize="20sp" />
+                android:id="@+id/textViewNombreAlarma"
+                android:layout_width="@dimen/lblWidth"
+                android:layout_height="@dimen/lblHeight"
+                android:gravity="center_vertical"
+                android:text="@string/lblName"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/editTextNombreAlarma"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="2dp"
+                android:layout_height="@dimen/lblHeight"
                 android:ems="10"
                 android:inputType="text" />
+
         </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <TextView
+                android:id="@+id/TextViewHoraAlarma"
+                android:layout_width="@dimen/lblWidth"
+                android:layout_height="@dimen/lblHeight"
+                android:gravity="center_vertical"
+                android:text="@string/lblHoraAlarma"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextHoraAlarma"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lblHeight"
+                android:ems="10"
+                android:inputType="number" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="@dimen/lblWidth"
+                android:layout_height="@dimen/lblHeight"
+                android:gravity="center_vertical"
+                android:text="@string/lblMinutosAlarma"
+                android:textSize="@dimen/stextSize"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextMinutosAlarma"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lblHeight"
+                android:ems="10"
+                android:inputType="number" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:text="@string/btnCrearAlarma" />
+        </TableRow>
+
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
