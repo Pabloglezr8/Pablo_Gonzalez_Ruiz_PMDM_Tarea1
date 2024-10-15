@@ -4,7 +4,7 @@
 <!-- Labels-->
     <string name="lblName">Nombre:</string>
     <string name="lblPswrd">Contraseña:</string>
-    <string name="lblWelcome">Bienvenido: </string>
+    <string name="lblWelcome">Bienvenido:  </string>
     <string name="lblHoraAlarma">Horas:</string>
     <string name="lblMinutosAlarma">Minutos:</string>
     <string name="lblNuevoNombre">Nuevo Nombre:</string>
