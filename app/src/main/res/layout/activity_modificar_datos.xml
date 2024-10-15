@@ -5,15 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditarCredenciales">
+    tools:context=".ModifiacarDatos">
 
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:orientation="vertical"
         android:paddingTop="50dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,15 +26,16 @@
 
             <TextView
                 android:id="@+id/textViewNuevoNombre"
-                android:layout_width="140dp"
+                android:layout_width="150dp"
                 android:layout_height="@dimen/lblHeight"
+                android:fontFamily="@font/muli_black"
                 android:gravity="center_vertical"
                 android:text="@string/lblNuevoNombre"
                 android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextNuevoNombre"
+                android:id="@+id/editTextNuevoNombre"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/lblHeight"
                 android:layout_weight="1"
@@ -52,20 +53,22 @@
             android:paddingRight="50dp">
 
             <TextView
-                android:id="@+id/textView2"
-                android:layout_width="140dp"
+                android:id="@+id/textViewNuevaContrasenia"
+                android:layout_width="150dp"
                 android:layout_height="@dimen/lblHeight"
+                android:fontFamily="@font/muli_black"
                 android:gravity="center_vertical"
                 android:text="@string/lblNuevaContraseña"
                 android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/editTextNuevaContrasenia"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/lblHeight"
                 android:layout_weight="1"
                 android:ems="10"
+                android:inputType="textPassword"
                 android:gravity="center_vertical" />
         </LinearLayout>
 
@@ -76,12 +79,14 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/btnGuardarCambios"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button"
-                android:textColor="@color/blue"
+                android:fontFamily="@font/mulish_bold"
+                android:padding="10dp"
                 android:text="@string/btnGuardarCambios"
+                android:textColor="@color/blue"
                 android:textColorLink="@color/blue" />
         </LinearLayout>
     </LinearLayout>

@@ -25,7 +25,6 @@ public class LogInCorrect extends AppCompatActivity {
 
 
         //Añadimos los elementos de la interfaz para recuperar el nombre del logIn
-
         String nombreUsuario = getIntent().getStringExtra("NombreUsuario");
         TextView textViewWelcome= findViewById(R.id.textViewWelcome);
         String welcomeMessage = getString(R.string.lblWelcome) + " " + nombreUsuario;

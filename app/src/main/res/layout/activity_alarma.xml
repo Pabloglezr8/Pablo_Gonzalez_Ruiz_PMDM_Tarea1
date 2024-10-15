@@ -29,6 +29,7 @@
                 android:id="@+id/textViewNombreAlarma"
                 android:layout_width="@dimen/lblWidth"
                 android:layout_height="@dimen/lblHeight"
+                android:fontFamily="@font/muli_black"
                 android:gravity="center_vertical"
                 android:text="@string/lblName"
                 android:textSize="@dimen/textSize"
@@ -56,6 +57,7 @@
                 android:id="@+id/TextViewHoraAlarma"
                 android:layout_width="@dimen/lblWidth"
                 android:layout_height="@dimen/lblHeight"
+                android:fontFamily="@font/muli_black"
                 android:gravity="center_vertical"
                 android:text="@string/lblHoraAlarma"
                 android:textSize="@dimen/textSize"
@@ -80,9 +82,10 @@
             android:paddingRight="50dp">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textViewMinutosAlarma"
                 android:layout_width="@dimen/lblWidth"
                 android:layout_height="@dimen/lblHeight"
+                android:fontFamily="@font/muli_black"
                 android:gravity="center_vertical"
                 android:text="@string/lblMinutosAlarma"
                 android:textSize="@dimen/textSize"
@@ -107,12 +110,14 @@
             android:paddingRight="50dp">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnCrearAlarma"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button"
-                android:textColor="@color/blue"
-                android:text="@string/btnCrearAlarma" />
+                android:fontFamily="@font/mulish_bold"
+                android:padding="10dp"
+                android:text="@string/btnCrearAlarma"
+                android:textColor="@color/blue" />
         </TableRow>
 
     </TableLayout>
