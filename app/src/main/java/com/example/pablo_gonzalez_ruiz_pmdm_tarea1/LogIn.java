@@ -44,12 +44,12 @@ public class LogIn extends AppCompatActivity {
         btnLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(editTextName.getText().toString().equals(user) && editTextPswrd.getText().toString().equals(password)){
+                if (editTextName.getText().toString().equals(user) && editTextPswrd.getText().toString().equals(password)) {
                     Intent iniciarSesion = new Intent(LogIn.this, LogInCorrect.class);
                     iniciarSesion.putExtra("NombreUsuario", editTextName.getText().toString());
                     startActivity(iniciarSesion);
-                }else {
-               //se crea  un toast par indicar q los campos son incorrectos
+                } else {
+                    //se crea  un toast par indicar q los campos son incorrectos
                     Toast.makeText(LogIn.this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -58,17 +58,17 @@ public class LogIn extends AppCompatActivity {
         ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
                 result -> {
-                if (result.getResultCode() == RESULT_OK) {
-                    Intent intent = result.getData();
-                    if (intent != null) {
-                        user = intent.getStringExtra("user");
-                         password = intent.getStringExtra("password");
-                    //Se crea un toast para indicar que se han actualizado los datos
-                        Toast.makeText(LogIn.this, "Datos Actualizados Correctamente", Toast.LENGTH_SHORT).show();
+                    if (result.getResultCode() == RESULT_OK) {
+                        Intent intent = result.getData();
+                        if (intent != null) {
+                            user = intent.getStringExtra("user");
+                            password = intent.getStringExtra("password");
+                            //Se crea un toast para indicar que se han actualizado los datos
+                            Toast.makeText(LogIn.this, "Datos Actualizados Correctamente", Toast.LENGTH_SHORT).show();
 
+                        }
                     }
-                }
-            });
+                });
 
 //OnClickListener para que el boton modificar datos nos rediriga a la actividad correspondiente
         btnModificarDatos.setOnClickListener(new View.OnClickListener() {

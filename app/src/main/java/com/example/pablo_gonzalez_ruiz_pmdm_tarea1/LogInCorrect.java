@@ -2,6 +2,8 @@ package com.example.pablo_gonzalez_ruiz_pmdm_tarea1;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -24,11 +26,21 @@ public class LogInCorrect extends AppCompatActivity {
         });
 
 
-        //Añadimos los elementos de la interfaz para recuperar el nombre del logIn
+//Añadimos los elementos de la interfaz para recuperar el nombre del logIn y mostrarlo
         String nombreUsuario = getIntent().getStringExtra("NombreUsuario");
-        TextView textViewWelcome= findViewById(R.id.textViewWelcome);
+        TextView textViewWelcome = findViewById(R.id.textViewWelcome);
         String welcomeMessage = getString(R.string.lblWelcome) + " " + nombreUsuario;
         textViewWelcome.setText(welcomeMessage);
 
+//Añadimos el boton para configurar una alarma
+        Button btnAlarma = findViewById(R.id.btnAlarma);
+
+        btnAlarma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent configurarAlarma = new Intent(LogInCorrect.this, Alarma.class);
+                startActivity(configurarAlarma);
+            }
+        });
     }
 }
