@@ -26,6 +26,7 @@
             android:paddingLeft="50dp"
             android:paddingRight="50dp">
 
+
             <TextView
                 android:id="@+id/textViewName"
                 android:layout_width="@dimen/lblWidth"
@@ -84,10 +85,12 @@
             android:id="@+id/btnLogIn"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/blue"
+            android:background="@drawable/button"
             android:gravity="center"
             android:text="@string/btnLogIn"
+            android:textColor="@color/blue"
             android:textColorLink="#F44336" />
 
         <Button
@@ -96,7 +99,8 @@
             android:layout_height="60dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:backgroundTint="@color/orange"
+            android:background="@drawable/button"
+            android:textColor="@color/blue"
             android:text="@string/btnCredential" />
 
     </LinearLayout>
