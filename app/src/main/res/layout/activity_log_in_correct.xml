@@ -8,9 +8,11 @@
     tools:context=".LogInCorrect">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
@@ -36,8 +38,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.514"
             app:layout_constraintStart_toStartOf="parent"
+            android:background="@android:color/transparent"
             app:layout_constraintTop_toBottomOf="@+id/textViewWelcome"
-            app:srcCompat="@drawable/ic_launcher_foreground" />
+            app:srcCompat="@mipmap/ic_www_foreground" />
 
         <Button
             android:id="@+id/btnAlarma"

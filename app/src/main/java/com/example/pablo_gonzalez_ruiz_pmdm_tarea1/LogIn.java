@@ -50,7 +50,7 @@ public class LogIn extends AppCompatActivity {
                     startActivity(iniciarSesion);
                 } else {
                     //se crea  un toast par indicar q los campos son incorrectos
-                    Toast.makeText(LogIn.this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LogIn.this, "Credenciales incorrectas", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -64,7 +64,7 @@ public class LogIn extends AppCompatActivity {
                             user = intent.getStringExtra("user");
                             password = intent.getStringExtra("password");
                             //Se crea un toast para indicar que se han actualizado los datos
-                            Toast.makeText(LogIn.this, "Datos Actualizados Correctamente", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LogIn.this, "Datos Actualizados Correctamente", Toast.LENGTH_LONG).show();
 
                         }
                     }

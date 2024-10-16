@@ -48,8 +48,6 @@ public class Alarma extends AppCompatActivity {
                 crearAlarma.putExtra(AlarmClock.EXTRA_MESSAGE, editTextNombreAlarma.getText().toString());
                 crearAlarma.putExtra(AlarmClock.EXTRA_HOUR, hora);
                 crearAlarma.putExtra(AlarmClock.EXTRA_MINUTES, minutos);
-
-// Comprobar que el botón ha sido clicado
                 startActivity(crearAlarma);
             }
         });

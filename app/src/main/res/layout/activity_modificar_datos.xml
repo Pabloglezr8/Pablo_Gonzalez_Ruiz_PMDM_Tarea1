@@ -19,14 +19,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:gravity="center"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:paddingLeft="50dp"
             android:paddingRight="50dp">
 
             <TextView
                 android:id="@+id/textViewNuevoNombre"
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:layout_height="@dimen/lblHeight"
                 android:fontFamily="@font/muli_black"
                 android:gravity="center_vertical"
@@ -36,7 +35,7 @@
 
             <EditText
                 android:id="@+id/editTextNuevoNombre"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="@dimen/lblHeight"
                 android:layout_weight="1"
                 android:ems="10"
@@ -47,14 +46,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:gravity="center"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:paddingLeft="50dp"
             android:paddingRight="50dp">
 
             <TextView
                 android:id="@+id/textViewNuevaContrasenia"
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:layout_height="@dimen/lblHeight"
                 android:fontFamily="@font/muli_black"
                 android:gravity="center_vertical"
@@ -64,12 +62,12 @@
 
             <EditText
                 android:id="@+id/editTextNuevaContrasenia"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="@dimen/lblHeight"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPassword"
-                android:gravity="center_vertical" />
+                android:gravity="center_vertical"
+                android:inputType="textPassword" />
         </LinearLayout>
 
         <LinearLayout
